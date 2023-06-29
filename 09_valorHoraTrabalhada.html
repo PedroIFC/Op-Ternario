@@ -8,11 +8,12 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
+    const hr = parseInt(prompt(`Informe a quantidade de horas trabalhadas semanalmente.`.trim()));
+    const din = parseFloat(prompt(`Insira o quanto você ganha por hora trabalhada.`.trim()));
 
     //Processamento
+    let ms = (hr <= 45) ? `Seu sálario semanalmente será de R$${((din * hr) * 5).toFixed(2).replace(".",",")} .` : (hr <= 60) ? `Seu sálario semanalemnte será de R$${((din * hr) * 1.2 * 5).toFixed(2).replace(".", ",")}` : `Seu salário semanalmente será de R$${((din * hr) * 1.3 * 5).toFixed(2).replace(".",",")}`;
 
-    
     //Saída
-
+    alert(ms);
 </script>

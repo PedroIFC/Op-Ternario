@@ -6,12 +6,15 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
-
+    const prc = parseFloat(prompt(`Informe o preço do litro do combustível.`).trim());
+    const ltr = parseFloat(prompt(`Informe a quantidade de litros utilizados para ir ao trabalho semanalmente.`).trim());
+    const trp = parseFloat(prompt(`Informe o preço do transporte público.`).trim());
+    const tra = parseInt(prompt(`Informe quantos dias você trabalha por semana.`).trim());
     //Processamento
+    let ms = (prc * ltr < trp * tra) ? `Este é o valor gasto com combustível semanalmente R$${(ltr * prc).toFixed(2).replace(".", ",")}`
+        : (prc * ltr == trp * tra) ? `O valor dos dois meios é equivalente R$${(prc * ltr).toFixed(2).replace(".", ", ")}.` : `O transporte público é mais barato, e este é o valor gasto semanalmente R$${(trp * tra).toFixed(2).replace(".", ",")}`;
 
-    
     //Saída
+    alert(ms);
 
-    
 </script>

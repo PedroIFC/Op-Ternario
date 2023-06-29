@@ -8,11 +8,11 @@
     // - cães grandes: fator 7.
 
     //Entrada
-    
-
+    const id = parseInt (prompt(`Informe a idade de seu cão em anos caninos.`).trim());
+    const prt = (prompt(`Insira o porte de seu cão: "P" para pequeno, "M" para médio e "G" para grande.`).trim().toUpperCase());
     //Processamento
-
-    
+     let ms = (prt === "P")? `A idade de seu cão em anos humanos é ${id * 5}` : (prt === "M")? `A idade de seu cão em anos humanos é ${id * 6}` 
+     : (prt === "G")? `A idade de seu cão em anos humanos é ${id * 7}` : "Valor inválido.";
     //Saída
-
+    alert(ms);
 </script>
