@@ -8,11 +8,11 @@
     //- acima de 1500: aumento de 5 %
 
     //Entrada
-    const pr = parseInt(prompt(`Informe o preço do produto.`).trim());
+    const preço = parseInt(prompt(`Informe o preço do produto.`).trim());
 
     //Processamento
-    let ms = (pr <= 280) ? (pr * 0.20) : (pr <= 700) ? (pr * 0.15) : (pr <= 1500) ? (pr * .10) : (pr * 0.05);
+    let mensagemFinal = (preço <= 280) ? (preço * 0.20) : (preço <= 700) ? (preço * 0.15) : (preço <= 1500) ? (preço * .10) : (preço * 0.05);
 
     //Saída
-    alert(`O aumento será de R$ ${ms.toFixed(2).replace(".", ",")}`);
+    alert(`O aumento será de R$ ${mensagemFinal.toFixed(2).replace(".", ",")}`);
 </script>

@@ -10,11 +10,11 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-    const nt = parseFloat(prompt(`Insira a nota para ser convertida.`).trim());
+    const nota = parseFloat(prompt(`Insira a nota para ser convertida.`).trim());
 
     //Processamento
-    let ms = (nt <= 10 && nt >= 9.0) ? "Sua nota conceito é A" : (nt <= 8.9 && nt >= 8) ? "Sua nota conceito é B" : (nt <= 7.9 && nt >= 7) ? "Sua nota conceito é C" : (nt <= 6.9 && nt >= 6) ? "Sua nota conceito é D" : "Sua nota conceito é E";
+    let mensagemFinal = (nota <= 10 && nota >= 9.0) ? "Sua nota conceito é A" : (nota <= 8.9 && nota >= 8) ? "Sua nota conceito é B" : (nota <= 7.9 && nota >= 7) ? "Sua nota conceito é C" : (nota <= 6.9 && nota >= 6) ? "Sua nota conceito é D" : "Sua nota conceito é E";
 
     //Saída
-    alert(ms);
+    alert(mensagemFinal);
 </script>
